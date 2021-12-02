@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "build:ui": "npm run build --prefix client",
-    "build": "npm run build:ui"
+    "build": "ls -l && npm run build:ui"
   },
   "keywords": [],
   "author": "",
