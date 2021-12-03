@@ -2,15 +2,13 @@
   "name": "heroku-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./api/dist/server.js",
   "scripts": {
-    "start": "node server.js",
+    "prestart": "cd api && tsc",
+    "start": "node .",
     "build": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "license": "ISC"
 }
