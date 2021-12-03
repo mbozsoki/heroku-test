@@ -5,7 +5,7 @@
   "main": "./api/dist/server.js",
   "scripts": {
     "start": "node .",
-    "build": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && cd api && NPM_CONFIG_PRODUCTION=false tsc"
+    "build": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && npm run build --prefix api"
   },
   "keywords": [],
   "author": "",

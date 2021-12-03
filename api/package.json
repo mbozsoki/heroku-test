@@ -4,6 +4,7 @@
   "main": "./dist/server.js",
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build":"tsc",
     "prestart": "tsc",
     "start": "nodemon ."
   },  
